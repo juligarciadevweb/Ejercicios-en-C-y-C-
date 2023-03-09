@@ -2,7 +2,7 @@
 
 Escribir un programa en C en el que se ingrese por teclado 
 el valor de una variable entera, otra flotante y 
-un carácter y se muestre su valor por el monitor:
+un carácter y se muestre su valor por el monitor
 
 */
 
