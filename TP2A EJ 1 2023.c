@@ -8,7 +8,6 @@ b. Descuentos:
 i. 14% de aporte jubilatorio.
 ii. $1500,00 de seguro de vida obligatorio.
 Mostrar cada ítem del sueldo y el total a percibir por el empleado
-
 */
 
 #include <stdio.h>
