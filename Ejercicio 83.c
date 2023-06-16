@@ -12,7 +12,6 @@ int main()
     {
         printf("Ingrese la nota: ");
         scanf("%d", &n);
-
         suma += n;
         x++;
     } while (n != 0);
