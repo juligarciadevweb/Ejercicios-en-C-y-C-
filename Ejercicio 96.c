@@ -18,13 +18,13 @@ int main(int argc, char const *argv[])
         scanf("%d", &nota);
         suma += nota;
 
-        if (nota != 0 && nota > mayor)
+        if (nota < 10 && nota > mayor)
         {
             mayor = nota;
         }
 
         x++;
-    } while (nota != 0);
+    } while (nota < 0);
     
     float promedio = suma / x ;
     printf("El promedio de las %d notas es %0.2f ",x, promedio);
