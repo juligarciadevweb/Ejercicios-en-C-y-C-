@@ -6,7 +6,6 @@ cuenta que el reparto está relacionado con la antigüedad, de acuerdo con:
 Hasta 3 años 15%
 Más de 3 años y hasta 15 años 45%
 Más de 30 años 70%
-
 */
 #include <stdio.h>
 
