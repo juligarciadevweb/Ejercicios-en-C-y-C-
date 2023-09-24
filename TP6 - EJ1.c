@@ -1,4 +1,5 @@
 /*
+
 Dado un de MxN donde M=4 y N=3 cuyo contenido son números
 reales.
 a. Haciendo uso de una función SIN TIPO, Ingrese elementos a la matriz.
@@ -6,12 +7,14 @@ b. Haciendo uso de una función CON TIPO, encuentre el mayor y menor elemento de
 valores se mostraran en la función principal main.
 c. Usando una función SIN TIPO, liste los elementos de la matriz separados por un guion medio de
 manera que se visualicen sus datos en forma de matriz(filas y columnas).
+
 */
 
 #include <stdio.h>
 
 void ingreso(int m, int n, int mat[100][100])
 {
+	printf("A continuacion va a ingresar los valores de la matriz: \n");
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
@@ -19,6 +22,7 @@ void ingreso(int m, int n, int mat[100][100])
             printf("[%d] [%d] = ", i, j);
             scanf("%d", &mat[i][j]);
         }
+        printf("\n\n");
     }
 }
 
