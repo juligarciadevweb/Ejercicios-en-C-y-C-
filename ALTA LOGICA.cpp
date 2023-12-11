@@ -8,11 +8,12 @@ struct registro
 	char apynom[30];
 	float sueldo;
 	bool borrado;	
-};
+}; 
 
 main()
 {
 	registro reg; //Variable de acceso al registro
+	struct registro *nom = (struct registro) malloc (n*sizeof(struct nomreg));
 	FILE *arch; //creacion de la variable de acceso al archivo
 	int n; //Cantidad de empleados que ingresar el usuario 
 	int i;
@@ -24,14 +25,14 @@ main()
 	{
 		printf("\n\nIngrese los datos del registro: ");
 		printf("\nLegajo: ");
-		scanf("%d", &reg.legajo); //Ya dentro del archivo accedo al legajo
+		scanf("%d", &reg[i].legajo); //Ya dentro del archivo accedo al legajo
 		_flushall(); //usamos la funcion interna _flushall() para limpiar el buffer
 		printf("\nIngrese el nombre y apellido: ");
-		gets(reg.apynom);
+		gets(reg[i].apynom);
 		printf("\nIngrese el sueldo: ");
-		scanf("%f", &reg.sueldo);
+		scanf("%f", &reg[i].sueldo);
 		printf("\nIngrese la edad: ");
-		scanf("%d", &reg.edad);
+		scanf("%d", &reg[i].edad);
 		reg.borrado = false;	
 		fwrite(&reg,sizeof(registro), 1, arch); //damos de alta creando el archivo
 	}
